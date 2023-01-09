@@ -176,74 +176,42 @@ header {
     }
 }
 
-/* SERVICE SECTION */
-
-#service {
-    padding: 70px 20px 20px 20px;
+/* MAP SECTION */
+#map {
     min-height: 100vh;
-    background-color: #8FBDD3;
-    flex-wrap: wrap;
 }
 
-#service h1 {
-    padding: 20px;
-    text-align: center;
-    font-size: 45pt;
-}
-
-.box {
-    border: solid;
-    border-radius: 5px;
-    padding: 80px 10px 50px 10px;
-    background-color: rgba(12, 11, 11, 0.155);
-}
-
-.box img {
-    width: 100px;
-    margin-bottom: 20px;
-}
-
-.box p {
-    font-weight: bold;
-    line-height: 20px;
-    /* border: solid; */
-    display: flex;
-    width: 300px;
-    margin-left: 35px;
-    margin-top: 10px;
-}
-
-.service {
+.map_container {
     display: flex;
     justify-content: space-around;
 }
 
-.service .box {
-    width: 400px;
+.map {
+    width: 100%;
+    /* padding: 1rem; */
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 10px;
 }
 
-.service div {
-    text-align: center;
-}
+/* #service {
+    padding: 10px;
+} */
 
-.btn a {
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-decoration: none;
-    color: white;
-    list-style: none;
-    /* border: solid; */
-}
+/* .protestan {
+    float: right;
+    padding: 5  px;
+    border: 1px solid black;
+    border-radius: 10%;
+} */
 
-.btn {
-    border: solid;
-    padding: 10px 20px 10px 20px;
-    border-radius: 25px;
-    list-style: none;
-    display: inline-block;
-    margin-top: 60px;
-    background-color: rgba(12, 11, 11, 0.397);
-}
+/* .islam {
+    padding: 5  px;
+    border: 1px solid black;
+    border-radius: 10%;
+    clear: both;
+} */
+
 
 @media screen and (max-width: 768px) {
     .box {
@@ -257,83 +225,7 @@ header {
     }
 }
 
-/* GALERI SECTION */
 
-#galeri {
-    padding: 70px 20px 20px 20px;
-    min-height: 100vh;
-    background-color: #8FBDD3;
-}
-
-#galeri h1 {
-    padding: 20px;
-    text-align: center;
-    font-size: 45pt;
-}
-
-.galeri {
-    display: flex;
-    padding: 50px;
-}
-
-.a {
-    border: solid;
-    background-color: rgba(12, 11, 11, 0.155);
-    padding: 10px;
-    border-radius: 3px;
-    margin: 5px;
-}
-
-.b {
-    border: solid;
-    background-color: rgba(12, 11, 11, 0.155);
-    padding: 10px;
-    border-radius: 3px;
-    margin: 5px;
-}
-
-.c {
-    border: solid;
-    background-color: rgba(12, 11, 11, 0.155);
-    padding: 10px;
-    border-radius: 3px;
-    margin: 5px;
-}
-
-.foto img {
-    width: 250px;
-    height: 250px;
-    margin: 5px;
-}
-
-.galeri div {
-    display: inline-block;
-    flex-direction: column;
-    text-align: center;
-}
-
-@media screen and (max-width:768px) {
-
-    .b {
-        border: 0;
-        background-color: transparent;
-        align-items: center;
-    }
-
-    .b img {
-        margin: -30px;
-        width: 400px;
-        padding: 2px;
-    }
-
-    .foto .a {
-        display: none;
-    }
-
-    .foto .c {
-        display: none;
-    }
-}
 
 /* CONTACT SECTION */
 
@@ -349,17 +241,24 @@ header {
     font-size: 45pt;
 }
 
+.contact .box img {
+    width: 200px;
+}
+
 .contact {
-    /* border: solid; */
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 
 .contact .box {
-    display: inline-block;
-    padding: 20px;
+    /* display: inline-block; */
+    padding: 10px;
     background-color: rgba(12, 11, 11, 0.155);
     line-height: 30px;
-    width: 400px;
+    width: fit-content;
+    overflow-wrap: break-word;
+    text-align: center;
 }
 
 .contact .box p1 {
